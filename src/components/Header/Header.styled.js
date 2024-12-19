@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   background-color: var(--background-yellow);
   padding: 6px;
+  margin-bottom: 14px;
 `;
 
 export const StyledTexts = styled.div`

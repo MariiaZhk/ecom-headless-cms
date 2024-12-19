@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { client } from "../../configApi/client";
 import { useMediaQuery } from "react-responsive";
 import { StyledHeader, StyledTexts } from "./Header.styled";
@@ -31,7 +31,7 @@ function Header() {
             {isMobile ? (
               <span>{headerTexts[1]}</span>
             ) : (
-              <div className="desktop-texts">
+              <div>
                 {headerTexts.map((text, index) => (
                   <span key={index}>{text}</span>
                 ))}
